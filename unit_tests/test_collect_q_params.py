@@ -2,10 +2,10 @@
 # Team: CBICR
 # SPDX-License-Identifier: Apache-2.0
 # See: https://spdx.org/licenses/
-
+import os
 import math
 import unittest
-
+os.environ['CUDA_DEVICE_ORDER'] = 'PCI_BUS_ID'
 import torch
 import torch.nn as nn
 
